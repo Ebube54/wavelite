@@ -529,9 +529,9 @@ main {
     color: white;
 }
 
-.pay_section_box_one:hover .pay_section_one_image {
+/* .pay_section_box_one:hover .pay_section_one_image {
     transform: scale(1.1);
-}
+} */
 
 .pay_section_box_two {
     display: flex;
@@ -618,9 +618,9 @@ main {
     color: white;
 }
 
-.pay_section_two_one:hover .pay_section_two_image {
+/* .pay_section_two_one:hover .pay_section_two_image {
     transform: scale(1.1);
-}
+} */
 
 
 .pay_section_two_two {
@@ -699,9 +699,9 @@ main {
     color: white;
 }
 
-.pay_section_two_two:hover .pay_section_two_two_image {
+/* .pay_section_two_two:hover .pay_section_two_two_image {
     transform: scale(1.1);
-}
+} */
 
 .pay_section_box_three {
     display: flex;
@@ -785,9 +785,9 @@ main {
     color: white;
 }
 
-.pay_section_box_three:hover .pay_section_three_image {
+/* .pay_section_box_three:hover .pay_section_three_image {
     transform: scale(1.1);
-}
+} */
 
 
 .pay_section_box_four {
@@ -878,9 +878,9 @@ main {
     color: white;
 }
 
-.pay_section_four_one:hover .pay_section_four_image {
+/* .pay_section_four_one:hover .pay_section_four_image {
     transform: scale(1.1);
-}
+} */
 
 .pay_section_four_two {
     width: 48%;
@@ -957,9 +957,9 @@ main {
     color: white;
 }
 
-.pay_section_four_two:hover .pay_section_four_two_image {
+/* .pay_section_four_two:hover .pay_section_four_two_image {
     transform: scale(1.1);
-}
+} */
 
 .pay_section_box_five {
     display: flex;
@@ -1042,9 +1042,9 @@ main {
     color: white;
 }
 
-.pay_section_box_five:hover .pay_section_five_image {
+/* .pay_section_box_five:hover .pay_section_five_image {
     transform: scale(1.1);
-}
+} */
 
 .pay_section_box_six {
     display: flex;
@@ -1136,9 +1136,9 @@ main {
     color: white;
 }
 
-.pay_section_six_one:hover .pay_section_six_image {
+/* .pay_section_six_one:hover .pay_section_six_image {
     transform: scale(1.1);
-}
+} */
 
 .pay_section_six_two {
     width: 48%;
@@ -1217,9 +1217,9 @@ main {
     color: white;
 }
 
-.pay_section_six_two:hover .pay_section_six_two_image {
+/* .pay_section_six_two:hover .pay_section_six_two_image {
     transform: scale(1.1);
-}
+} */
 
 .setup_section {
     display: flex;
@@ -2108,5 +2108,23 @@ u {
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+}
+
+
+@media (max-width: 414px) {
+    .footer_main_body p u {
+        background-color: #25323B;
+        color: rgba(148, 151, 153, 1);    
+    }
+
+    #quick {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 413px) {
+    #quick {
+        margin-top: 0px;
     }
 }
