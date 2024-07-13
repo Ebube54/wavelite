@@ -1,40 +1,3 @@
-@keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-30px);
-    }
-
-    60% {
-        transform: translateY(-15%);
-    }
-}
-
-/* @keyframes slideInLeft {
-    from {
-        transform: translateX(-300px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-} */
-
-.bounce:hover {
-    animation-name: bounce;
-    animation: bounce 3s ease-in infinite;
-}
-
-/* .slideInLeft {
-    animation: slideInLeft 3s ease-in infinite;
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -148,7 +111,165 @@ ul li a:hover {
     margin-top: 4px;
 }
 
-.chat {
+.closes {
+    display: none;
+    flex-direction: column;
+    
+    cursor: pointer;
+    
+}
+
+.close_item {
+
+    width: 24px;
+    height: 3px;
+    background-color: black;
+    
+}
+
+.close1 {
+    transform: rotate(45deg);
+}
+.close3 {
+    transform: rotate(-48deg);
+    margin-top: -2.5px;
+}
+
+main {
+    position: sticky;
+    top: 70px;
+}
+
+.dropdown_section {
+    display: none;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 10px 5px silver;
+    
+}
+
+.dropdown_container {
+    margin: auto;
+    width: 100%;
+}
+
+.dropdown_main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.up {
+    display: flex;
+    height: 2px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    top: 20px;
+    background-color: black;
+}
+
+.dropdown1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown_main2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dropdown3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 15px;
+
+}
+
+.link a {
+    text-decoration: none;
+    color: grey;
+}
+
+.down {
+    display: flex;
+    height: 2px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+   
+    background-color: black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 100px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.login {
+    text-decoration: none;
+    
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 255, 0.663);
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.login:hover {
+    transform: scale(1.1);
+}
+
+.get {
+    text-decoration: none;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 100, 249, 0.813);
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.get:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* .chat {
     position: sticky;
     right: 0;
     float: right;
@@ -160,7 +281,6 @@ ul li a:hover {
 
 .chat a {
     writing-mode: vertical-rl;
-    display: inline;
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
     border-radius: 0px 10px 10px 0px;
@@ -168,7 +288,7 @@ ul li a:hover {
     padding: .7em 0.4em;
     transform: rotate(180deg);
 
-}
+} */
 
 .hero_section {
     margin-top: 10px;
@@ -400,6 +520,16 @@ ul li a:hover {
 .pay_section_one_image {
     max-width: 100%;
     height: 100%;
+    transition: transform 0.3s ease-in;
+}
+
+.pay_section_box_one:hover #read {
+    background-color: indianred;
+    color: white;
+}
+
+.pay_section_box_one:hover .pay_section_one_image {
+    transform: scale(1.1);
 }
 
 .pay_section_box_two {
@@ -474,16 +604,23 @@ ul li a:hover {
     height: 280px;
     justify-content: right;
     background-color: #00284C;
-
-    
 }
 
 .pay_section_two_image {
     max-width: 75%;
     background-color: #00284C;
-
-    
+    transition: transform 0.3s ease-in;
 }
+
+.pay_section_two_one:hover .read_more a {
+    background-color: indianred;
+    color: white;
+}
+
+.pay_section_two_one:hover .pay_section_two_image {
+    transform: scale(1.1);
+}
+
 
 .pay_section_two_two {
     width: 48%;
@@ -553,6 +690,16 @@ ul li a:hover {
 
     max-width: 70%;
     background-color: #2C4D3C;
+    transition: transform 0.3s ease-in;
+}
+
+.pay_section_two_two:hover .more_read a {
+    background-color: #38B274;
+    color: white;
+}
+
+.pay_section_two_two:hover .pay_section_two_two_image {
+    transform: scale(1.1);
 }
 
 .pay_section_box_three {
@@ -629,6 +776,16 @@ ul li a:hover {
     background-color: #E5EEF7;
     max-width: 100%;
     height: 100%;
+    transition: transform 0.3s ease-in;
+}
+
+.pay_section_box_three:hover .moreread a {
+    background-color: rgba(0, 100, 249, 0.7);
+    color: white;
+}
+
+.pay_section_box_three:hover .pay_section_three_image {
+    transform: scale(1.1);
 }
 
 
@@ -711,9 +868,17 @@ ul li a:hover {
 
 .pay_section_four_image {
     max-width: 85%;
-    background-color: #515151;
+    background-color: #515151;  
+    transition: transform 0.3s ease-in;
+}
 
-    
+.pay_section_four_one:hover .read_moore a {
+    background-color: #F8A346;
+    color: white;
+}
+
+.pay_section_four_one:hover .pay_section_four_image {
+    transform: scale(1.1);
 }
 
 .pay_section_four_two {
@@ -783,6 +948,16 @@ ul li a:hover {
 
     max-width: 80%;
     background-color: #fff;
+    transition: transform 0.3s ease-in;
+}
+
+.pay_section_four_two:hover .moore_read a {
+    background-color: rgba(0, 100, 249, 0.7);
+    color: white;
+}
+
+.pay_section_four_two:hover .pay_section_four_two_image {
+    transform: scale(1.1);
 }
 
 .pay_section_box_five {
@@ -858,6 +1033,16 @@ ul li a:hover {
     background-color: #fff;
     max-width: 100%;
     height: 100%;
+    transition: transform 0.3s ease-in;
+}
+
+.pay_section_box_five:hover .moreread a {
+    background-color: rgba(0, 100, 249, 0.7);
+    color: white;
+}
+
+.pay_section_box_five:hover .pay_section_five_image {
+    transform: scale(1.1);
 }
 
 .pay_section_box_six {
@@ -942,6 +1127,16 @@ ul li a:hover {
     background-color: #436AB7;
 
     
+    transition: transform 0.3s ease-in;
+}
+
+.pay_section_six_one:hover .reed_more a {
+    background-color: #E4CA80;
+    color: white;
+}
+
+.pay_section_six_one:hover .pay_section_six_image {
+    transform: scale(1.1);
 }
 
 .pay_section_six_two {
@@ -1013,6 +1208,16 @@ ul li a:hover {
 
     max-width: 75%;
     background-color: #2D9124;
+    transition: transform 0.3s ease-in;
+}
+
+.pay_section_six_two:hover .more_reed a {
+    background-color: #E4CA80;
+    color: white;
+}
+
+.pay_section_six_two:hover .pay_section_six_two_image {
+    transform: scale(1.1);
 }
 
 .setup_section {
@@ -1247,6 +1452,8 @@ ul li a:hover {
 
 u {
     background-color: #25323B;
+    color: rgba(148, 151, 153, 1);
+
 }
 
 
@@ -1386,6 +1593,16 @@ u {
     .navbar_harmburger {
         display: none;
     }
+
+    .closes {
+        display: none;
+    }
+
+    main {
+        display: none;
+    }
+
+
 }
 
 @media (min-width: 769px) {
@@ -1404,7 +1621,7 @@ u {
     }
 
     .sticky_navbar {
-        width: 90%;
+        width: 95%;
     }
 
     .hero_main {
@@ -1627,6 +1844,14 @@ u {
         justify-content: center;
         align-items: center;
     }
+
+    .dropdown_section h3 {
+        font-size: 1rem;
+    }
+
+    .link {
+        font-size: 0.8rem;
+    }
     
 
 }
@@ -1653,10 +1878,10 @@ u {
         margin-top: 0;
     }
 
-    .second_hero_text {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+    /* .second_hero_text {
+        margin-left: 5px;
+        margin-right: 5px;
+    } */
 
     .pay_section_body {
         margin-top: 70px;
@@ -1818,15 +2043,16 @@ u {
     }
 
     .setup_main_body span {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
-        width: 90px;
-        height: 50px;
-        border-radius: 35px;
+        width: 80px;
+        height: 35px;
+        border-radius: 40px;
     }
 
     #span {
         width: 66px;
+        height: 40px;
     }
 
     .bottom_section_body h1 {
@@ -1868,6 +2094,7 @@ u {
 
     #quick {
         width: 40%;
+        margin-top: 10px
     }
 
     #footer_p1 {
